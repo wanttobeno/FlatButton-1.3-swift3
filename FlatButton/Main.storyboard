@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Oeb-F5-PuG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="I5o-Xc-zwO">
+            <objects>
+                <windowController id="UFJ-zz-Zdv" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="KBJ-sx-AFA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="171" y="190" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1319" height="757"/>
+                    </window>
+                    <connections>
+                        <segue destination="Oeb-F5-PuG" kind="relationship" relationship="window.shadowedContentViewController" id="rNS-iS-4YI"/>
+                    </connections>
+                </windowController>
+                <customObject id="LKu-IL-Jtr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="-290"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ak6-2n-ut0">
+            <objects>
+                <viewController id="Oeb-F5-PuG" customClass="ViewController" customModule="FlatButton_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="pkF-Sd-qSH">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gj-sz-72J" customClass="FlatButton" customModule="FlatButton_Example" customModuleProvider="target">
+                                <rect key="frame" x="130" y="120" width="220" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="72u-so-CZE"/>
+                                    <constraint firstAttribute="height" constant="36" id="fFg-Gg-xWj"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="登    录" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kYX-ts-Tur">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="18"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="1" green="0.49411764705882355" blue="0.2773008742015271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeButtonColor">
+                                        <color key="value" red="0.00027712576856342772" green="0.00043623096446698817" blue="0.00034009473187578739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0Gj-sz-72J" firstAttribute="centerX" secondItem="pkF-Sd-qSH" secondAttribute="centerX" id="333-IC-1eK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="6uv-wT-7nd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="208"/>
+        </scene>
+    </scenes>
+</document>
